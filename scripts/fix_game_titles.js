@@ -3,6 +3,11 @@
 // Maps game IDs to human-readable titles using intelligent conversion
 
 const fs = require('fs');
+const path = require('path');
+
+// Get repo root (parent of scripts dir)
+const scriptDir = path.dirname(path.resolve(__filename));
+const repoRoot = path.dirname(scriptDir);
 
 // Human-readable title mappings for known games
 const titleMap = {
@@ -89,7 +94,7 @@ function idToReadableTitle(id) {
   return words.join(' ') || id;
 }
 
-const games = JSON.parse(fs.readFileSync('public/games.json', 'utf8'));
+const games = JSON.parse(fs.readFileSync(path.join(repoRoot, 'public', 'games.json'), 'utf8'));
 
 // Update titles
 for(const game of games){
@@ -98,7 +103,7 @@ for(const game of games){
   game.thumbnail = `https://via.placeholder.com/400x240?text=${encodeURIComponent(game.title)}`;
 }
 
-fs.writeFileSync('public/games.json', JSON.stringify(games, null, 2), 'utf8');
+fs.writeFileSync(path.join(repoRoot, 'public', 'games.json'), JSON.stringify(games, null, 2), 'utf8');
 console.log(`Updated ${games.length} game titles.`);
 
 // Show samples

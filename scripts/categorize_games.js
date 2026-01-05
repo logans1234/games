@@ -5,7 +5,12 @@
 const fs = require('fs');
 const path = require('path');
 
-const manifest = JSON.parse(fs.readFileSync('public/games-manifest.json', 'utf8'));
+// Get repo root (parent of scripts dir)
+const scriptDir = path.dirname(path.resolve(__filename));
+const repoRoot = path.dirname(scriptDir);
+
+const gamesJsonPath = path.join(repoRoot, 'public', 'games.json');
+const games = JSON.parse(fs.readFileSync(gamesJsonPath, 'utf8'));
 
 const categoryPatterns = {
   'Retro': /NES|SNES|Genesis|Sega|Atari|Arcade|Emulator|ROM|GBA|PSX|NES|ROM/i,
@@ -23,7 +28,7 @@ const categoryPatterns = {
 
 const categories = new Set(Object.keys(categoryPatterns));
 
-for(const game of manifest){
+for(const game of games){
   for(const [cat, pattern] of Object.entries(categoryPatterns)){
     if(pattern.test(game.title)){
       game.category = cat;
@@ -35,13 +40,13 @@ for(const game of manifest){
   }
 }
 
-fs.writeFileSync('public/games.json', JSON.stringify(manifest, null, 2), 'utf8');
-console.log(`Categorized ${manifest.length} games.`);
+fs.writeFileSync(gamesJsonPath, JSON.stringify(games, null, 2), 'utf8');
+console.log(`Categorized ${games.length} games.`);
 console.log('Categories:', Array.from(categories).sort());
 
 // Summary
 const summary = {};
-for(const game of manifest){
+for(const game of games){
   summary[game.category] = (summary[game.category] || 0) + 1;
 }
 console.log('\nCategory breakdown:');
