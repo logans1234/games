@@ -45,25 +45,40 @@ if(!fs.existsSync(importDir)){
 
 fs.mkdirSync(outDir, { recursive: true })
 
-const files = fs.readdirSync(importDir).filter(f=>f.toLowerCase().endsWith('.html'))
-if(files.length === 0){
+// Recursively collect .html files from importDir
+function collectHtmlFiles(dir){
+  const res = []
+  const entries = fs.readdirSync(dir, { withFileTypes: true })
+  for(const e of entries){
+    const full = path.join(dir, e.name)
+    if(e.isDirectory()){
+      res.push(...collectHtmlFiles(full))
+    } else if(e.isFile() && e.name.toLowerCase().endsWith('.html')){
+      res.push(full)
+    }
+  }
+  return res
+}
+
+const filePaths = collectHtmlFiles(importDir)
+if(filePaths.length === 0){
   console.error('No .html files found in', importDir)
   process.exit(1)
 }
 
 const games = []
-for(const f of files){
-  const src = path.join(importDir, f)
-  const html = fs.readFileSync(src, 'utf8')
+for(const fullPath of filePaths){
+  const html = fs.readFileSync(fullPath, 'utf8')
+  const f = path.basename(fullPath)
   const fileBaseName = path.basename(f, '.html')
   let extractedTitle = extractTitle(html, fileBaseName)
-  
+
   // If title is generic, use the filename instead
-  if(genericTitles.has(extractedTitle.toLowerCase())){
+  if(extractedTitle && genericTitles.has(extractedTitle.toLowerCase())){
     extractedTitle = fileBaseName
   }
-  
-  // Use original filename as ID (like cl1on1soccer, cl3dash)
+
+  // Use original filename as ID (preserve cl* ids)
   const id = fileBaseName
   const outName = id + '.html'
   const dest = path.join(outDir, outName)

@@ -13,7 +13,10 @@ const gamesJsonPath = path.join(repoRoot, 'public', 'games.json');
 const games = JSON.parse(fs.readFileSync(gamesJsonPath, 'utf8'));
 
 const categoryPatterns = {
-  'Retro': /NES|SNES|Genesis|Sega|Atari|Arcade|Emulator|ROM|GBA|PSX|NES|ROM/i,
+  'SNES': /SNES|Super Nintendo|Super Nintendo Entertainment System/i,
+  'Sega': /Sega|Genesis|Mega Drive|Dreamcast|Saturn/i,
+  'Arcade': /Arcade|MAME|Cabinet|Arcade Game/i,
+  'Retro': /NES|Atari|Emulator|ROM|GBA|PSX|NES|ROM/i,
   'Clicker': /Clicker|Idle|Tycoon|Miner|Empire|Merchant|Trader|Builder|Manager|Farm|Factory|Incremental/i,
   'Action': /Shoot|Shooter|Gun|Weapon|Bomb|War|Battle|Combat|Fight|Duel|Strike|Attack|Raid|Assault|Blaster|Laser|Cannon|Rocket|Grenade|Mine|Trap|Snipe|Slasher|Mad|Rampage|Mayhem|Fury|Rampage/i,
   'Sports': /Soccer|Football|Basketball|Baseball|Tennis|Golf|Bowling|Hockey|Cricket|Volleyball|Badminton|Ping.Pong|Boxing|Wrestling|Karate|Skateboard|Snowboard|Skiing|Surfing|Billiards|Snooker|Dart|Curling|Lacrosse|Rugby|Handball|Dodgeball|Kickball|Kickboxing|MMA|UFC|Judo|Taekwondo|Sumo|Luge|Bobsled|Speedskating|Racquetball/i,

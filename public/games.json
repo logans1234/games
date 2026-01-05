@@ -9,154 +9,154 @@
   },
   {
     "id": "cl10bullets",
-    "title": "10 Bullets",
+    "title": "cl10bullets",
     "category": "Other",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=10%20Bullets",
+    "thumbnail": "https://via.placeholder.com/400x240?text=cl10bullets",
     "path": "public/games/cl10bullets.html"
   },
   {
     "id": "cl10minutestildawn",
-    "title": "10 Minutestildawn",
+    "title": "10 Minutes Till Dawn | Seraph",
     "category": "Other",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=10%20Minutestildawn",
+    "thumbnail": "https://via.placeholder.com/400x240?text=10%20Minutes%20Till%20Dawn%20%7C%20Seraph",
     "path": "public/games/cl10minutestildawn.html"
   },
   {
     "id": "cl10morebullets",
-    "title": "10 Morebullets",
+    "title": "cl10morebullets",
     "category": "Other",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=10%20Morebullets",
+    "thumbnail": "https://via.placeholder.com/400x240?text=cl10morebullets",
     "path": "public/games/cl10morebullets.html"
   },
   {
     "id": "cl12minibattles",
-    "title": "12 Minibattles",
+    "title": "cl12minibattles",
     "category": "Action",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=12%20Minibattles",
+    "thumbnail": "https://via.placeholder.com/400x240?text=cl12minibattles",
     "path": "public/games/cl12minibattles.html"
   },
   {
     "id": "cl1on1soccer",
-    "title": "1 On 1 Soccer",
+    "title": "cl1on1soccer",
     "category": "Sports",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=1%20On%201%20Soccer",
+    "thumbnail": "https://via.placeholder.com/400x240?text=cl1on1soccer",
     "path": "public/games/cl1on1soccer.html"
   },
   {
     "id": "cl1v1lol",
-    "title": "1 V 1 Lol",
-    "category": "Other",
+    "title": "cl1v1lol",
+    "category": "Multiplayer",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=1%20V%201%20Lol",
+    "thumbnail": "https://via.placeholder.com/400x240?text=cl1v1lol",
     "path": "public/games/cl1v1lol.html"
   },
   {
     "id": "cl1v1tennis",
-    "title": "1 V 1 Tennis",
+    "title": "cl1v1tennis",
     "category": "Sports",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=1%20V%201%20Tennis",
+    "thumbnail": "https://via.placeholder.com/400x240?text=cl1v1tennis",
     "path": "public/games/cl1v1tennis.html"
   },
   {
     "id": "cl2Dshooting",
-    "title": "2 Dshooting",
+    "title": "Shooter 2D Online",
     "category": "Action",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=2%20Dshooting",
+    "thumbnail": "https://via.placeholder.com/400x240?text=Shooter%202D%20Online",
     "path": "public/games/cl2Dshooting.html"
   },
   {
     "id": "cl2doom",
-    "title": "2 Doom",
-    "category": "Other",
+    "title": "2DOOM - A bloody cute demake by Valryon, Plius and The Fun Institute",
+    "category": "Casual",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=2%20Doom",
+    "thumbnail": "https://via.placeholder.com/400x240?text=2DOOM%20-%20A%20bloody%20cute%20demake%20by%20Valryon%2C%20Plius%20and%20The%20Fun%20Institute",
     "path": "public/games/cl2doom.html"
   },
   {
     "id": "cl3dash",
-    "title": "3 Dash",
+    "title": "cl3dash",
     "category": "Other",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=3%20Dash",
+    "thumbnail": "https://via.placeholder.com/400x240?text=cl3dash",
     "path": "public/games/cl3dash.html"
   },
   {
     "id": "cl3pandas",
-    "title": "3 Pandas",
+    "title": "cl3pandas",
     "category": "Other",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=3%20Pandas",
+    "thumbnail": "https://via.placeholder.com/400x240?text=cl3pandas",
     "path": "public/games/cl3pandas.html"
   },
   {
     "id": "cl3pandasbrazil",
-    "title": "3 Pandasbrazil",
+    "title": "cl3pandasbrazil",
     "category": "Other",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=3%20Pandasbrazil",
+    "thumbnail": "https://via.placeholder.com/400x240?text=cl3pandasbrazil",
     "path": "public/games/cl3pandasbrazil.html"
   },
   {
     "id": "cl3pandasfantasy",
-    "title": "3 Pandasfantasy",
+    "title": "cl3pandasfantasy",
     "category": "RPG",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=3%20Pandasfantasy",
+    "thumbnail": "https://via.placeholder.com/400x240?text=cl3pandasfantasy",
     "path": "public/games/cl3pandasfantasy.html"
   },
   {
     "id": "cl3pandasjapan",
-    "title": "3 Pandasjapan",
+    "title": "cl3pandasjapan",
     "category": "Other",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=3%20Pandasjapan",
+    "thumbnail": "https://via.placeholder.com/400x240?text=cl3pandasjapan",
     "path": "public/games/cl3pandasjapan.html"
   },
   {
     "id": "cl3pandasnight",
-    "title": "3 Pandasnight",
+    "title": "cl3pandasnight",
     "category": "Other",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=3%20Pandasnight",
+    "thumbnail": "https://via.placeholder.com/400x240?text=cl3pandasnight",
     "path": "public/games/cl3pandasnight.html"
   },
   {
     "id": "cl3slices2",
-    "title": "3 Slices 2",
+    "title": "cl3slices2",
     "category": "Other",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=3%20Slices%202",
+    "thumbnail": "https://via.placeholder.com/400x240?text=cl3slices2",
     "path": "public/games/cl3slices2.html"
   },
   {
     "id": "cl4thandgoal",
-    "title": "4 Thandgoal",
+    "title": "4th and Goal 2022",
     "category": "Other",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=4%20Thandgoal",
+    "thumbnail": "https://via.placeholder.com/400x240?text=4th%20and%20Goal%202022",
     "path": "public/games/cl4thandgoal.html"
   },
   {
     "id": "cl8ballclassic",
-    "title": "8 Ballclassic",
-    "category": "Other",
+    "title": "8 Ball Billiards Classic",
+    "category": "Sports",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=8%20Ballclassic",
+    "thumbnail": "https://via.placeholder.com/400x240?text=8%20Ball%20Billiards%20Classic",
     "path": "public/games/cl8ballclassic.html"
   },
   {
     "id": "cl8ballpool",
-    "title": "8 Ballpool",
+    "title": "cl8ballpool",
     "category": "Other",
     "author": "",
-    "thumbnail": "https://via.placeholder.com/400x240?text=8%20Ballpool",
+    "thumbnail": "https://via.placeholder.com/400x240?text=cl8ballpool",
     "path": "public/games/cl8ballpool.html"
   }
 ]
